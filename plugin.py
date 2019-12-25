@@ -404,6 +404,7 @@ class BasePlugin:
 
         if power < 0:
             power = 0  # lower limit
+            overshoot = True
         elif power > 100:
             power = 100  # upper limit
 
